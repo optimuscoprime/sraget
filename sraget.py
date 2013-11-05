@@ -146,8 +146,6 @@ def main():
 
     if len(filtered_experiments) > 0:
         log("", stderr=True)
-        log("Results:", stderr=True)
-        log("", stderr=True)
         total_runs = 0
         for experiment_accession in sorted(filtered_experiments.iterkeys()):
             experiment = filtered_experiments[experiment_accession]
