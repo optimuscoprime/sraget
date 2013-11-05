@@ -3,6 +3,11 @@ sraget
 
 Find peer-reviewed data in the NCBI SRA
 
+Overview
+--------
+
+There is a lot of sequencing data available on the NCBI Sequence Read Archive, but only some of the data has a record of being published. This script finds data with explicit links to publications (in journals, etc.).
+
 Output
 ------
 
