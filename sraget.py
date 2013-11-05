@@ -90,7 +90,7 @@ def main():
     
     # query strings can be too long for arguments
     # so we take the query on stdin instead
-    log("Search query: ", stderr=True, newline=False)
+    log("NCBI SRA search query: ", stderr=True, newline=False)
     term = raw_input()
     log("", stderr=True)
 
