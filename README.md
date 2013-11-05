@@ -2,7 +2,9 @@ sraget
 ======
 
 sraget - Find peer-reviewed data in the NCBI SRA
+
 Copyright (C) 2013  Rupert Shuttleworth
+
 optimuscoprime@gmail.com
 
 Overview
