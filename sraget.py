@@ -351,9 +351,10 @@ def retry_request(request, max_retries=10):
     return page
 
 def parse_arguments():
-    description = 'Find download links for published datasets on the NCBI SRA.'
+    description = 'Find peer-reviewed data in the NCBI SRA'
     parser = argparse.ArgumentParser(
-        description=description
+        description=description,
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
 
     parser.add_argument('--threads',
@@ -364,7 +365,7 @@ def parse_arguments():
     )   
 
     parser.add_argument('--hide-runs',
-        help='Hide information about runs?',
+        help='Hide information about runs',
         action='store_const',
         const=True,
         default=False,
