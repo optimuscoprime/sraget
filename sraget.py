@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
-# Rupert Shuttleworth
-# Victor Chang Cardiac Research Insitute
-# 2013
+# sraget - Find peer-reviewed data in the NCBI SRA
+# Copyright (C) 2013  Rupert Shuttleworth
 
 import sys
 import pdb
