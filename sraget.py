@@ -358,7 +358,7 @@ def parse_arguments():
 
     parser.add_argument('--threads',
         help="Number of threads",
-        default=1,
+        default=8,
         type=int,
         required=False
     )   
