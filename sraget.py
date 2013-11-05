@@ -358,14 +358,14 @@ def parse_arguments():
     )
 
     parser.add_argument('--threads',
-        help="Number of threads",
+        help="number of threads",
         default=8,
         type=int,
         required=False
     )   
 
     parser.add_argument('--hide-runs',
-        help='Hide information about runs',
+        help='hide information about runs',
         action='store_const',
         const=True,
         default=False,
