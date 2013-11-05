@@ -11,7 +11,7 @@ The script outputs experiment accessions, run accessions and download URLs for d
 If you want to save just the accessions and URLs into a file, you could run the script like this:
 
 <pre>
-./sraget.py > results
+./sraget.py | tee results
 </pre>
 
 Usage
