@@ -29,6 +29,9 @@ import argparse
 import threading
 import Queue
 
+PROGRAM_NAME = "sraget"
+VERSION = "0.1"
+
 ENTREZ_PAGE_SIZE = 100
 
 DEFAULT_ENTREZ_PARAMETERS = {
@@ -366,9 +369,16 @@ def retry_request(request, max_retries=10):
 
 def parse_arguments():
     description = 'Find peer-reviewed data in the NCBI SRA'
+
     parser = argparse.ArgumentParser(
         description=description,
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        prog=PROGRAM_NAME
+    )
+
+    parser.add_argument('--version',
+        action='version',
+        version="%(prog)s " + VERSION
     )
 
     parser.add_argument('--threads',
