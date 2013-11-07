@@ -102,6 +102,8 @@ sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
 sys.stderr = os.fdopen(sys.stderr.fileno(), 'w', 0)
 
 def main():    
+    ensure_correct_python_version()
+
     args = parse_arguments()
     num_threads = args.threads
     show_runs = not args.hide_runs
@@ -182,6 +184,11 @@ def main():
             log("Total: %d experiments." % (len(filtered_experiments)), stderr=True)
     else:
         log("No results.", stderr=True)
+
+def ensure_correct_python_version():
+    if not (sys.version_info.major == 2 and sys.version_info.minor == 7):
+        log("%s requires Python 2.7.x" % (PROGRAM_NAME))
+        sys.exit(-1)
 
 def process_search_results_page(filtered_experiments, page, page_number, num_threads):
     global page_potential_experiment_accessions
