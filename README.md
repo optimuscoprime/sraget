@@ -1,6 +1,16 @@
 sraget
 ======
 
+Overview
+--------
+
+As of November 2013, the NCBI Sequence Read Archive (SRA) contains over three million gigabytes of DNA and RNA sequencing files.
+
+Each file has a publication date, which appears to be the date that the file was made available on the SRA. However, we were interested in whether any data had actually been used to write a paper which had been published in a journal. In particular, we thought this might be a proxy for “good quality” data. So we developed a program to automatically check various webpages and identify the SRA data which had corresponding journal publications.
+
+License
+-------
+
 <pre>
 sraget - Find peer-reviewed data in the NCBI SRA
 Copyright (C) 2013  Rupert Shuttleworth
@@ -20,11 +30,6 @@ You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 </pre>
-
-Overview
---------
-
-There is a lot of sequencing data available on the NCBI Sequence Read Archive, but only some of the data has a record of being published. This script finds data with explicit links to publications (in journals, etc.).
 
 Output
 ------
